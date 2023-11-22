@@ -1,1 +1,122 @@
-s
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* root colors */
+
+:root{
+    --main: #fff;
+    --primary: #07072b;
+    --secondary: #DB59DE;
+    --alternative: #41BBE0;
+    --accent: #E0A600;
+}
+/* primary button */
+.primary--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .primary--button:hover{
+        cursor: pointer;
+        background-color: var(--main);
+        padding: 0.8em 4em 0.8em 2em;
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+    }
+     /* &after on hover */
+     .primary--button:hover::after{
+        content:"►";
+        position: absolute;
+        margin-left: 1.5em;
+    }
+/* secondary button */
+.secondary--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .secondary--button:hover{
+        cursor: pointer;
+        background-color: var(--alternative);
+        padding: 0.8em 4em 0.8em 2em;
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+    }
+     /* &after on hover */
+     .secondary--button:hover::after{
+        content:"►";
+        position: absolute;
+        margin-left: 1.5em;
+    }
+/* links */
+/* primary link */
+.primary--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--alternative);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .primary--link:hover{
+        cursor: pointer;
+        background-color: var(--accent);
+        padding: 0.8em 4em 0.8em 2em;
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+        border: none;
+    }
+    /* &after on hover */
+    .primary--link:hover::after{
+        content:"►";
+        position: absolute;
+        margin-left: 1.5em;
+        
+    }
+/* secondary link */
+.secondary--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--main);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .secondary--link:hover{
+        cursor: pointer;
+        background-color: var(--secondary);
+        padding: 0.8em 4em 0.8em 2em;
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+        border: none;
+    }
+    /* &after on hover */
+    .secondary--link:hover::after{
+        content:"►";
+        position: absolute;
+        margin-left: 1.5em;
+        
+    }
